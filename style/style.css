@@ -242,7 +242,6 @@ h6:hover {
 .list-unstyled li:not(:last-child) {
     margin-bottom: 4px;
 }
-
 .dropdown-toggle::after {
     border: none;
     content: url('../img/menu-arrow-down.svg');
@@ -276,6 +275,8 @@ h6:hover {
 @media (min-width: 992px) {
     .navbar .megamenu {
         margin-top: 3px;
+        /* height: 346px;
+        overflow: hidden; */
     }
 }
 .dropdown-menu {

@@ -21,6 +21,9 @@
             const slider = new ChiefSlider('.slider-for-autoplay', {
                 loop: false,
             });
+            const slider1 = new ChiefSlider('.slider-for-autoplay1', {
+                loop: false,
+            });
         });
     </script>
     <!--  -->
@@ -64,12 +67,39 @@
             // DOMContentLoaded  end
         </script>
         <script src="js/jquery.min.js"></script>    
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
         <script>
             $(function() {
                 // Owl Carousel
-                var owl = $(".owl-carousel");
-                owl.owlCarousel({
+                var owl1 = $(".owl-carousel1");
+                owl1.owlCarousel({
+                    // items: 3,
+                    // margin: 10,
+                    // loop: true,
+                    // nav: true,
+    
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 1000,
+                    autoplaySpeed: 500,
+                    autoplayHoverPause: true,
+                    slideTransition: 'ease-in-out',
+                    items: 1,
+                    nav: false,
+                    dots: false,
+    
+                    responsive: { //адаптивность
+                        600: {
+                        items: 1
+                        }
+                    }
+                });
+            });
+
+            $(function() {
+                // Owl Carousel
+                var owl2 = $(".owl-carousel2");
+                owl2.owlCarousel({
                     // items: 3,
                     // margin: 10,
                     // loop: true,
@@ -206,7 +236,7 @@
                                 <div class="container">
                                     <div class="row g-3 try-for-g3">
                                         <div class="col-lg-3 col-6 no-paddings nav-cards">
-                                            <div class="owl-carousel">
+                                            <div class="owl-carousel owl-carousel1">
                                                 <div class="menu-card">                                                 
                                                     <div class="content__item-block content__item-vip">
                                                         <div class="content__item-top">
@@ -547,7 +577,7 @@
                                 <div class="container">
                                     <div class="row g-3 try-for-g3">
                                         <div class="col-lg-3 col-6 no-paddings nav-cards">
-                                            <div class="owl-carousel">
+                                            <div class="owl-carousel owl-carousel2">
                                                 <div class="menu-card">                                                 
                                                     <div class="content__item-block content__item-vip">
                                                         <div class="content__item-top">
@@ -1372,7 +1402,7 @@
                                     </table>
                                 </div>
                                 <div class="content__item-bottom">
-                                    <div class="slider">
+                                    <div class="slider slider-for-autoplay1">
                                         <div class="slider__wrapper">
                                           <div class="slider__items">
                                             <div class="slider__item"></div>
