@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/doer/doer.css">
+
+
+
+    <title>Doer</title>
+</head>
+<body>
+    
+    <div class="header-top">
+        <div class="container header-top__container">
+            <div class="change-language ">
+                Язык
+                <svg style="transform: translateY(-2px);" width="10" height="10" viewBox="0 0 18 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3333 8.33334L9 16.6667L0.666664 8.33334" stroke="black"/>
+                </svg>
+            </div>                
+            <div>
+                <ul class="header-top__list">
+                    <li class="header-top__item">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-top__item notification-icon notification-have">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-top__item messages-icon messages-have">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                            </svg>
+                            <a class="number-of-messages">
+                                2
+                            </a>
+                        </a>
+                    </li>
+                    <li class="header-top__item">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-mid">
+        <div class="container header-mid__container">
+            <div>
+                <a href="">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text">
+                    <button class="search-bar__btn">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="doer__main">
+        <div class="container">
+            <div class="row doer__up">
+                <div class="col-lg-8">
+                    <div class="doer__profile">
+                        <div class="doer__profile-up">
+                            <h2 class="doer__name">
+                                Илья 
+                                <a href="" class="content__under-ava-svg vip-user-icon">
+                                    <svg class="vip-user-icon-tootip" style="transform: translateY(2px);" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" fill="rgb(254, 191, 0)"
+                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <path d="M511.277,197.276c-1.476-4.54-5.054-8.089-9.608-9.523l-145.236-45.767L268.025,18c-2.772-3.886-7.251-6.194-12.025-6.194
+                                            c-4.774,0-9.253,2.308-12.025,6.194l-88.409,123.986L10.331,187.754c-4.554,1.435-8.132,4.983-9.608,9.523
+                                            c-1.475,4.539-0.665,9.513,2.175,13.35l90.597,122.395l-1.353,152.272c-0.042,4.773,2.225,9.273,6.088,12.079
+                                            c3.863,2.807,8.844,3.573,13.37,2.057L256,451.088l144.401,48.341c1.531,0.513,3.113,0.764,4.688,0.764
+                                            c3.08,0,6.126-0.964,8.682-2.821c3.862-2.806,6.13-7.306,6.088-12.079l-1.353-152.272l90.597-122.395
+                                            C511.942,206.79,512.752,201.816,511.277,197.276z M391.822,319.421c-1.908,2.579-2.926,5.71-2.898,8.918l1.212,136.504
+                                            l-129.447-43.335c-1.521-0.51-3.104-0.764-4.689-0.764c-1.584,0-3.168,0.255-4.689,0.764l-129.447,43.335l1.213-136.504
+                                            c0.029-3.208-0.989-6.339-2.898-8.918l-81.216-109.72l130.197-41.029c3.06-0.964,5.724-2.899,7.586-5.512L256,52.014
+                                            l79.254,111.147c1.863,2.612,4.525,4.547,7.586,5.512l130.197,41.029L391.822,319.421z"/>
+                                        <path d="M256,221.538c-8.157,0-14.769,6.613-14.769,14.769v78.769c0,8.157,6.613,14.769,14.769,14.769
+                                            c8.157,0,14.769-6.613,14.769-14.769v-78.769C270.769,228.15,264.157,221.538,256,221.538z"/>
+                                        <path d="M344.615,221.538h-39.385c-8.157,0-14.769,6.613-14.769,14.769v78.769c0,8.157,6.613,14.769,14.769,14.769
+                                            S320,323.233,320,315.076v-24.615h24.615c19.002,0,34.462-15.459,34.462-34.462S363.618,221.538,344.615,221.538z
+                                            M344.615,260.922H320v-9.846h24.615c2.715,0,4.923,2.208,4.923,4.923C349.539,258.714,347.33,260.922,344.615,260.922z"/>
+                                        <path d="M211.955,222.478c-7.639-2.862-16.151,1.005-19.015,8.643l-15.71,41.892l-15.71-41.892
+                                            c-2.864-7.639-11.376-11.507-19.015-8.643c-7.637,2.864-11.507,11.377-8.643,19.015l29.538,78.769
+                                            c2.162,5.764,7.673,9.583,13.829,9.583s11.668-3.819,13.829-9.583l29.538-78.769C223.463,233.855,219.593,225.342,211.955,222.478
+                                            z"/>
+                                    </svg>    
+                                </a>
+                            </h2>
+                            <div class="doer__user-btns">
+                                <a class="doer__user-btn" href="">Личный кабинет</a>
+                                <a class="doer__user-btn" href="">Редактировать</a>
+                            </div>
+                        </div>
+                        <div class="doer__profile-block">
+                            <div class="doer__ava">
+                                <img src="https://www.ejin.ru/wp-content/uploads/2018/10/crew4_1024.png">
+                            </div>
+                            <div class="doer__profile-right">
+                                <div class="doer__icons">
+                                    <div class="doer__checked-icon">
+                                        <a href="" class="content__under-ava-svg checked-user-icon">
+                                            <svg style="transform: translateY(3px);" class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
+                                                <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                                                <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                            </svg>
+                                            Подтвержденный пользователь
+                                        </a> 
+                                    </div>                                   
+                                    <div class="doer__top-icon">
+                                        <a href="" class="content__under-ava-svg top-user-icon">
+                                            <svg style="transform: translateY(2px);" class="top-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="rgb(254, 191, 0)" class="bi bi-person-square" viewBox="0 0 16 16">
+                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                                            </svg>
+                                            Топ-пользователь
+                                        </a>   
+                                    </div>
+                                </div>
+                                <div class="doer__age">
+                                    35 лет
+                                </div>
+                                <div class="doer__cities">
+                                    Казань, Чистополь
+                                </div>
+                                <div class="stars">
+                                    Средняя оценка: 4
+                                    <img class="star" src="img/star-black.svg">
+                                    <img class="star" src="img/star-black.svg">
+                                    <img class="star" src="img/star-black.svg">
+                                    <img class="star" src="img/star-black.svg">
+                                    <img class="star" src="img/star-white.svg">
+                                    (12 отзывов)
+                                </div>
+                                <div class="doer__profile-likes">
+                                    <div class="doer__profile-like-block">
+                                        <svg style="transform: translateY(-2px);" class="doer__profile-like" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                                            <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                                        </svg>
+                                        <a class="doer__profile-like-sum">1918</a>
+                                    </div>
+                                    <div class="doer__profile-like-block">
+                                        <svg class="doer__profile-dislike" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-hand-thumbs-down" viewBox="0 0 16 16">
+                                            <path d="M8.864 15.674c-.956.24-1.843-.484-1.908-1.42-.072-1.05-.23-2.015-.428-2.59-.125-.36-.479-1.012-1.04-1.638-.557-.624-1.282-1.179-2.131-1.41C2.685 8.432 2 7.85 2 7V3c0-.845.682-1.464 1.448-1.546 1.07-.113 1.564-.415 2.068-.723l.048-.029c.272-.166.578-.349.97-.484C6.931.08 7.395 0 8 0h3.5c.937 0 1.599.478 1.934 1.064.164.287.254.607.254.913 0 .152-.023.312-.077.464.201.262.38.577.488.9.11.33.172.762.004 1.15.069.13.12.268.159.403.077.27.113.567.113.856 0 .289-.036.586-.113.856-.035.12-.08.244-.138.363.394.571.418 1.2.234 1.733-.206.592-.682 1.1-1.2 1.272-.847.283-1.803.276-2.516.211a9.877 9.877 0 0 1-.443-.05 9.364 9.364 0 0 1-.062 4.51c-.138.508-.55.848-1.012.964l-.261.065zM11.5 1H8c-.51 0-.863.068-1.14.163-.281.097-.506.229-.776.393l-.04.025c-.555.338-1.198.73-2.49.868-.333.035-.554.29-.554.55V7c0 .255.226.543.62.65 1.095.3 1.977.997 2.614 1.709.635.71 1.064 1.475 1.238 1.977.243.7.407 1.768.482 2.85.025.362.36.595.667.518l.262-.065c.16-.04.258-.144.288-.255a8.34 8.34 0 0 0-.145-4.726.5.5 0 0 1 .595-.643h.003l.014.004.058.013a8.912 8.912 0 0 0 1.036.157c.663.06 1.457.054 2.11-.163.175-.059.45-.301.57-.651.107-.308.087-.67-.266-1.021L12.793 7l.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581 0-.211-.027-.414-.075-.581-.05-.174-.111-.273-.154-.315l-.353-.354.353-.354c.047-.047.109-.176.005-.488a2.224 2.224 0 0 0-.505-.804l-.353-.354.353-.354c.006-.005.041-.05.041-.17a.866.866 0 0 0-.121-.415C12.4 1.272 12.063 1 11.5 1z"/>
+                                        </svg>
+                                        <a class="doer__profile-like-sum">645</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="" class="doer__proffer">
+                        Предложить задание
+                    </a>
+                    <p class="doer__under-proffer">
+                        Исполнитель получит уведомление и сможет оказать вам свои услуги
+                    </p>
+                    <img style="height: 150px; margin-top: 20px;" src="https://static.tildacdn.com/tild3635-3033-4931-b636-333031333063/Logo5.jpg" alt="">
+                </div>
+            </div>
+            <div class="row doer__mid">
+                <div class="col-lg-8">
+                    <h3 class="doer__mid-about-header">Обо мне</h3>
+                    <div class="doer__mid-about-proffer">
+                        <svg style="transform: translateY(1px);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg>
+                        Чтобы воспользоваться моими услугами, нажмите кнопку «Предложить задание».
+                    </div>
+                    <div class="doer__mid-about">
+                        Здравствуйте! Готов предложить Вам услуги пешего курьера. Осуществим срочную и своевременную доставку. В штате опытные, и проверенные курьеры. За всех курьеров несу  материальную ответственность. Оплата возможна на карту СБЕРБАНКА, Тинкоффа! 
+                        Для связи имеется WHATSAPP/TELEGRAM
+                    </div>
+                </div>
+                <div class="col-lg-4 doer__works">
+                    <h3 class="types-of-jobs__header">
+                        Виды выполняемых работ
+                    </h3>
+                    <div>
+                        <div id="click-to-hide__head" class="click-to-hide__head">
+                            Курьерские услуги
+                        </div>
+                        <div id="hidden-element__list" class="hidden-element__list doer__services-list">
+                            <div class="doer__services-item">
+                                <a>Услуги пешего курьера</a>
+                            </div>
+                            <div class="doer__services-item">
+                                <a>Срочная доставка</a>
+                            </div>
+                            <div class="doer__services-item">
+                                <a>Другая посылка</a>
+                            </div>
+                        </div>
+                        <script>
+                            document.getElementById('click-to-hide__head').addEventListener("click", hiddenCloseclick);
+                            function hiddenCloseclick() {
+                                let x = document.getElementById('hidden-element__list');
+                                if (x.style.display == "none"){
+                                    x.style.display = "block";
+                                } 
+                                else {
+                                    x.style.display = "none"
+                                }
+                            };
+                        </script>
+
+                        <div id="click-to-hide__head1" class="click-to-hide__head">
+                            Фото, видео и аудио
+                        </div>
+                        <div id="hidden-element__list1" class="hidden-element__list doer__services-list">
+                            <div class="doer__services-item">
+                                <a>Фотосъёмка</a>
+                            </div>
+                        </div>
+                        <script>
+                            document.getElementById('click-to-hide__head1').addEventListener("click", hiddenCloseclick);
+                            function hiddenCloseclick() {
+                                let x = document.getElementById('hidden-element__list1');
+                                if (x.style.display == "none"){
+                                    x.style.display = "block";
+                                } 
+                                else {
+                                    x.style.display = "none"
+                                }
+                            };
+                        </script>
+
+                        <div id="click-to-hide__head2" class="click-to-hide__head">
+                            Курьерские услуги
+                        </div>
+                        <div id="hidden-element__list2" class="hidden-element__list doer__services-list">
+                            <div class="doer__services-item">
+                                <a>Услуги пешего курьера</a>
+                            </div>
+                            <div class="doer__services-item">
+                                <a>Срочная доставка</a>
+                            </div>
+                            <div class="doer__services-item">
+                                <a>Другая посылка</a>
+                            </div>
+                        </div>
+                        <script>
+                            document.getElementById('click-to-hide__head2').addEventListener("click", hiddenCloseclick);
+                            function hiddenCloseclick() {
+                                let x = document.getElementById('hidden-element__list2');
+                                if (x.style.display == "none"){
+                                    x.style.display = "block";
+                                } 
+                                else {
+                                    x.style.display = "none"
+                                }
+                            };
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h3 class="doer__portfolio-head">Портфолио</h3>
+                <ul class="doer__portfolio">
+                    <li class="doer__portfolio-item col-lg-2">                       
+                       <a href="">
+                            <div class="doer__portfolio-photo">
+                                <img src="https://vologda.topshowmen.com/storage/news/topshowmen-novosti-c170526164503.jpg">
+                            </div> 
+                            <div class="doer__portfolio-header">Фотосессия</div>
+                       </a>
+                    </li>
+                    <li class="doer__portfolio-item col-lg-2">                       
+                        <a href="">
+                            <div class="doer__portfolio-photo">
+                                <img src="https://simpla.pro/images/articles/features-of-choise-delivery/main.jpg">
+                            </div> 
+                            <div class="doer__portfolio-header">Отправка посылки в другой город</div>
+                        </a>
+                     </li>
+                     <li class="doer__portfolio-item doer__portfolio-item-empty col-lg-2">                       
+                        <a href="">
+                            <div class="doer__portfolio-photo-empty">
+                                <svg style="transform: translateX(-2px);" width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                                    <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                </svg>
+                            </div> 
+                        </a>
+                     </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="doer__comments-head">Отзывы</h3>
+                    <ul class="doer__comments">
+                        <li class="doer__comments-item">
+                            <div class="doer__comments-item-block">
+                                <div class="doer__comments-up">
+                                    <div class="doer__comments-ava">
+                                        <img src="https://klike.net/uploads/posts/2019-03/1551511784_4.jpg">
+                                    </div>
+                                    <div class="doer__comments-name">
+                                        Людмила Г.
+                                        <svg style="transform: translateY(3px);" class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
+                                            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="doer__comments-down">
+                                    Спасибо огромное! Оперативность, вежливость, пунктуальность – все про вас! Спасли!
+                                </div>
+                            </div>
+                            <div class="doer__comments-time">
+                                4 ч. 27 минут назад
+                            </div>
+                        </li>
+                        <li class="doer__comments-item">
+                            <div class="doer__comments-item-block">
+                                <div class="doer__comments-up">
+                                    <div class="doer__comments-ava">
+                                        <img src="img/no-ava.svg">
+                                    </div>
+                                    <div class="doer__comments-name">
+                                        Людмила Г.
+                                        <svg style="transform: translateY(3px);" class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
+                                            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                                            <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="doer__comments-down">
+                                    Спасибо огромное! Оперативность, вежливость, пунктуальность – все про вас! Спасли!
+                                </div>
+                            </div>
+                            <div class="doer__comments-time">
+                                5 ч. 56 минут назад
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

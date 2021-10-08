@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="style/account/account.css">
+    <link rel="stylesheet" href="style/registr/registr.css">
+    <link rel="stylesheet" href="style/registr/registr-face.css">
+
+
+
+
+    <title>Registr-face</title>
+</head>
+<body>
+    
+    <div class="header-top">
+        <div class="container header-top__container">
+            <div class="change-language ">
+                Язык
+                <svg style="transform: translateY(-2px);" width="10" height="10" viewBox="0 0 18 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3333 8.33334L9 16.6667L0.666664 8.33334" stroke="black"/>
+                </svg>
+            </div>                
+            <div>
+                <ul class="header-top__list">
+                    <li class="header-top__item">
+                        <a id="account">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-top__item notification-icon notification-have">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-top__item messages-icon messages-have">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                            </svg>
+                            <a class="number-of-messages">
+                                2
+                            </a>
+                        </a>
+                    </li>
+                    <li class="header-top__item">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-mid">
+        <div class="container header-mid__container">
+            <div>
+                <a href="">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text">
+                    <button class="search-bar__btn">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main class="registr__main">
+        <div class="">
+            <div class="registr">
+                <h1 class="registr__header">Регистрация заказчика</h1>
+                <form action class="form form-registr"> <!-- form-registr -->
+
+                    <div class="field__wrapper">
+                        
+
+                        <p class="field__wrapper-text">Аватарка</p>
+                        <input 
+                            data-validate-field="file"
+                            name="file" 
+                            type="file"
+                            name="file" 
+                            id="field__file-2" 
+                            class="field field__file"
+                        >
+                           
+                        <label class="field__file-wrapper" for="field__file-2">
+                            <div class="field__file-fake">Файл не выбран</div>
+                            <div class="field__file-button">Выбрать</div>
+                        </label>
+                           
+                    </div>
+
+                    <script>
+                        let fields = document.querySelectorAll('.field__file');
+                        Array.prototype.forEach.call(fields, function (input) {
+                          let label = input.nextElementSibling,
+                            labelVal = label.querySelector('.field__file-fake').innerText;
+                      
+                          input.addEventListener('change', function (e) {
+                            let countFiles = '';
+                            if (this.files && this.files.length == 1)
+                              countFiles = this.files.length;
+                      
+                            if (countFiles)
+                              label.querySelector('.field__file-fake').innerText = 'Файл выбран';
+                            else
+                              label.querySelector('.field__file-fake').innerText = labelVal;
+                          });
+                        });
+                    </script>
+
+
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="surname"
+                            class="form__input" 
+                            type="date"
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Дата рождения</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="surname"
+                            class="form__input" 
+                            type="text"
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Фамилия:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="first_name"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Имя:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            class="form__input" 
+                            type="text"
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Отчество:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="login"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Логин:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="password"
+                            class="form__input" 
+                            type="password" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Пароль:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="password"
+                            class="form__input password" 
+                            type="password" 
+                            name="" 
+                            id="password-input"
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Повторите пароль:</label>
+                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="mail"
+                            class="form__input" 
+                            type="email" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Почта:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="tel"
+                            data-validate-rules="phone"
+                            class="form__input" 
+                            type="tel" 
+                            name="" 
+                            id=""
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Номер телефона:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="city"
+                            class="form__input" 
+                            type="text"
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Город:</label>
+                    </div>
+                    <div class="form__group registr__element">
+                        <input 
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Районы:</label>
+                        <!--  registr__element -->
+                    </div>
+                     
+                    <div class="checkselect">
+                        <label><input type="checkbox" name="brands[]" value="1"><span> Poremque</span></label>
+                        <label><input type="checkbox" name="brands[]" value="2"><span> Facere</span></label>
+                        <label><input type="checkbox" name="brands[]" value="3"><span> Paliquam</span></label>
+                        <label><input type="checkbox" name="brands[]" value="4"><span> Perspiciatis</span></label>
+                        <label><input type="checkbox" name="brands[]" value="5"><span> Distinctio</span></label>
+                        <label><input type="checkbox" name="brands[]" value="6"><span> Sunt</span></label>
+                    </div>
+                    
+                    <div class="form-registr__btn-block">
+                        <button class="form-registr__btn">
+                            Отправить
+                        </button>
+                    </div>
+
+
+                     
+
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function show_hide_password(target){
+            var input = document.getElementById('password-input');
+            if (input.getAttribute('type') == 'password') {
+                target.classList.add('view');
+                input.setAttribute('type', 'text');
+            } else {
+                target.classList.remove('view');
+                input.setAttribute('type', 'password');
+            }
+            return false;
+        }
+    </script>
+
+    <script src="registr/just-validate.js"></script>
+    <script src="registr/inputmask.js"></script>
+    <script>
+
+
+
+
+
+        var selector = document.querySelector("input[type='tel']");
+        var im = new Inputmask("+7 ( 999 ) 999-99-99");
+
+        im.mask(selector);
+
+        new JustValidate('.form-registr', {
+            rules: {
+                // name: {
+                //     required: true,
+                //     minLength: 2,
+                //     maxLength: 30
+                // },
+                tel: {
+                    required: true,
+                    function: (name, value) => {
+                        const phone = selector.inputmask.unmaskedvalue()
+                        console.log(phone)
+                        return Number(phone) && phone.length === 10
+                    }
+                },
+                mail: {
+                    required: true,
+                    email: true
+                },
+                first_name: {
+                    required: true,
+                    minLength: 2,
+                    maxLength: 30
+                },
+                surname: {
+                    required: true,
+                    minLength: 2,
+                    maxLength: 30
+                },
+                login: {
+                    required: true,
+                    minLength: 6,
+                    maxLength: 20
+                },
+                city: {
+                    required: true
+                },
+                file: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: 'Как вас зовут?'
+                },
+                tel: {
+                    required: 'Укажите ваш телефон'
+                },
+                mail: {
+                    required: 'Укажите ваш e-mail'
+                },  
+                // login: {
+                //     required:
+                // }
+            }   
+        });
+    </script>
+
+    <script>
+        
+        // var hiding_password = 
+
+    </script>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        (function($) {
+            function setChecked(target) {
+                var checked = $(target).find("input[type='checkbox']:checked").length;
+                if (checked) {
+                    $(target).find('select option:first').html('Выбрано: ' + checked);
+                } else {
+                    $(target).find('select option:first').html('Выберите из списка');
+                }
+            }
+        
+            $.fn.checkselect = function() {
+                this.wrapInner('<div class="checkselect-popup"></div>');
+                this.prepend(
+                    '<div class="checkselect-control">' +
+                        '<select class="form-control"><option></option></select>' +
+                        '<div class="checkselect-over"></div>' +
+                    '</div>'
+                );	
+        
+                this.each(function(){
+                    setChecked(this);
+                });		
+                this.find('input[type="checkbox"]').click(function(){
+                    setChecked($(this).parents('.checkselect'));
+                });
+        
+                this.parent().find('.checkselect-control').on('click', function(){
+                    $popup = $(this).next();
+                    $('.checkselect-popup').not($popup).css('display', 'none');
+                    if ($popup.is(':hidden')) {
+                        $popup.css('display', 'block');
+                        $(this).find('select').focus();
+                    } else {
+                        $popup.css('display', 'none');
+                    }
+                });
+        
+                $('html, body').on('click', function(e){
+                    if ($(e.target).closest('.checkselect').length == 0){
+                        $('.checkselect-popup').css('display', 'none');
+                    }
+                });
+            };
+        })(jQuery);	
+        
+        $('.checkselect').checkselect();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+/* .mail__main .no-select, .mail__main h2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+} */
+
+/* html {
+    width: 100%;
+    height: 100%;
+    perspective: 900;
+    overflow-y: scroll;
+    background-color: #dce7eb;
+    font-family: "Titillium Web", sans-serif;
+    color: rgba(48, 69, 92, 0.8); 
+} */
+/* 
+body {
+    min-height: 0;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 90px 0;
+    transform: translate(-50%, 0);
+    box-shadow: 0 10px 0 0 #ff6873 inset;
+    background-color: #fefffa;
+    max-width: 450px;
+    padding: 30px; 
+} */
+
+.mail__main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mail__main .transition, .mail__down {
+    transition: all 0.25s ease-in-out; 
+}
+  
+.mail__main .flipIn, .mail__header , .mail__item {
+    animation: flipdown 0.5s ease both; 
+}
+
+.mail__header, .mail__up {
+    color: var(--color-black);
+}
+
+.mail__header {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 3px;
+    font-weight: 700; 
+    border-bottom: 3px solid var(--color-black);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mail__choices {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.mail__choices-item {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.mail__up {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    /* display: block; */
+    /* background-color: #fefffa; */
+    margin: 0;
+    cursor: pointer; 
+    border-bottom: 1px solid var(--color-black);
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+.unread-message .mail__up {
+    background-color: #c4c7cf;
+}
+.mail__up-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mail__ava {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.mail__name {
+    font-weight: 600;
+    width: 400px;
+    font-size: 18px;
+}
+
+.mail__down {
+    color: rgba(48, 69, 92, 0.8);
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2; 
+}
+.mail__message {
+    padding: 0 97px 0 75px;
+}
+.mail__message p {
+    border-bottom: 1px solid rgba(48, 69, 92, 0.5);
+}
+.mail__answer-now {
+    margin-bottom: 50px;
+    padding: 0 99px 0 75px;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.mail__answer-now-header {
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.mail__answer-now-answer {
+    width: 100%;
+}
+.trumbowyg-button-pane {
+    display: none;
+}
+.mail__answer-now-answer textarea {
+    width: 0px !important;
+}
+
+.mail_list {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0; 
+    margin-top: 30px;
+}
+.mail__item {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    /* border-top: 3px solid var(--color-black);  */
+}
+.mail__item:nth-of-type(1) {
+    animation-delay: 0.5s; 
+}
+.mail__item:nth-of-type(2) {
+    animation-delay: 0.75s; 
+}
+.mail__item:nth-of-type(3) {
+    animation-delay: 1.0s; 
+}
+
+.mail__item:last-of-type {
+    padding-bottom: 0; 
+}
+.mail__input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0; 
+}
+.mail__input[type=checkbox]:checked ~ .mail__down {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%); 
+}
+
+
+/* .trumbowyg-dropdown {
+    display: block !important;
+} */
+
+@keyframes flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg); 
+    }
+    5% {
+        opacity: 1; 
+    }
+    80% {
+        transform: rotateX(8deg); 
+    }
+    83% {
+        transform: rotateX(6deg); 
+    }
+    92% {
+        transform: rotateX(-3deg); 
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg); 
+    } 
+}
+
+.mail__btn-block {
+    text-align: right;
+}
+.mail__btn {
+    border-radius: 10px;
+    border: 1px solid var(--color-yellow);
+    background: none;
+    padding: 7px 14px;
+}

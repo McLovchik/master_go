@@ -1,0 +1,158 @@
+.modal-account {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--color-white);
+    opacity: 0.8;
+}
+.modal-account__content {
+    position: relative;
+    background-color: black;
+    margin: 15% auto;
+    padding: 47px;
+    border: 2px solid var(--color-yellow);
+    width: 300px;
+    /* height: 300px; */
+    color: var(--color-white);
+}
+.close-account {
+    color: var(--color-black);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.close-account svg:hover {
+    fill: var(--color-yellow)
+}
+
+.account__btn-back {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.account__btn-back svg:hover {
+    fill: var(--color-yellow);
+}
+/* .account-btn {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    padding: 7px;
+} */
+
+.form {
+    width: 100%;
+}
+.form__title {
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+.form__group {
+    position: relative;
+    margin-bottom: 32px;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    transition: .3s;
+    color: var(--color-white);
+    color: #9e9e9e;
+}
+.form__input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    background-color: transparent;
+    outline: none;
+    transition: .3s;
+    color: var(--color-white);
+}
+.form__input:focus {
+    border-bottom: 1px solid var(--color-yellow);
+}
+.form__btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-white);
+    color: #fff;
+    background: var(--color-yellow);
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.form__btn:focus,
+.form__btn:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label {
+    top: -18px;
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: #bdbbbb;
+}
+
+.form__btns {
+    display: flex;
+    justify-content: space-between;
+}
+.form__input-password {
+    margin-bottom: 10px;
+}
+
+.registr__choice {
+    display: none;
+}
+
+#registr-choice__btn {
+    color: var(--color-black);
+}
+
+.registr__choice-ask {
+    text-align: center;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-bottom: 40px;
+}
+.registr__choice-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.registr__choice-btn {
+    border-top: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    padding: 15px 0;
+    cursor: pointer;
+}
+.registr__choice-btn:last-child {
+    padding: 15px 18px;
+}
+
+.registr__choice-ask-executor {
+    display: none;
+}
+
+
+/*  */
+

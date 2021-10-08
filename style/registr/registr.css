@@ -1,0 +1,176 @@
+.registr__main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.registr {
+    background: var(--color-white);
+    padding: 20px 50px;
+    border-radius: 20px;
+    width: 400px;
+    /* border: 2px solid var(--color-black); */
+    /* box-shadow: 5px 5px 5px 5px var(--color-white); */
+}
+.registr__header {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-yellow);
+    margin-bottom: 40px;
+}
+
+.form-registr {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.registr__element {
+    margin-bottom: 30px;
+}
+.registr__element input {
+    /* width: 98%; */
+    color: var(--color-black);
+    padding-bottom: 0px;
+}
+.registr__element label {
+    
+}
+
+.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown) ~ .form__label {
+    color: var(--color-yellow);
+}
+.form__input:hover ~ .form__label, .form__input:not(:placeholder-shown) ~ .form__label {
+    color: var(--color-yellow);
+    top: -18px;
+    font-size: 12px;
+}
+.form__input:focus, .form__input:not(:placeholder-shown) {
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+.registr__element .js-validate-error-field {
+    border: none !important;
+    border-bottom: 1px solid rgb(184, 17, 17) !important;
+}
+.js-validate-error-label {
+    font-size: 12px;
+    text-align: right;
+}
+
+
+.password {
+	position: relative;
+}
+.password-control {
+	position: absolute;
+	top: 0px;
+	right: 6px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../../img/eye.svg') 0 0 no-repeat;
+}
+.password-control.view {
+	background: url('../../img/eye-slash.svg') 0 0 no-repeat;
+}
+
+
+.form-registr__btn-block {
+    display: flex;
+    justify-content: center;
+}
+
+.form-registr__btn {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: var(--color-yellow);
+    border-radius: 10px;
+    transition: background-color .3s, color .3s;
+    cursor: pointer;
+}
+.form-registr__btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+
+.field__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 0px 0 30px 0;
+    text-align: center;
+}
+
+.field__wrapper-text {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: -26px;
+}
+
+.field__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+   
+.field__file-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+   
+.field__file-fake {
+    height: 40px;
+    width: 267px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 15px;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+}
+   
+.field__file-button {
+    width: 80px;
+    height: 40px;
+    background: var(--color-black);
+    border: 1px solid var(--color-black);
+    color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: background-color .3s, color .3s, border-color .3s;
+}
+.field__file-button:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    border-color: #c7c7c7;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/account/account.css">
+
+
+    <title>Account</title>
+</head>
+<body>
+    
+    <div class="header-top">
+        <div class="container header-top__container">
+            <div class="change-language">
+
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div> -->
+                <!-- <div class="change-language__select change-language__collapsed" >
+                    <div class="change-language__shown">Язык</div>
+                    <div class="change-language__option">Russian</div>
+                    <div class="change-language__option">English</div>
+                </div>
+                <script>
+                    document.querySelectorAll(".change-language__select").forEach((el)=> {
+                        el.addEventListener("click", function (e){
+                            if (e.target && e.target.matches(".change-language__option")) {
+                                this.querySelector(".change-language__shown").innerHTML = e.target.innerHTML;
+                            }
+                            this.classList.toggle("change-language__collapsed");
+                        });
+                    }); 
+                </script> -->
+                <!-- Язык -->
+                <!-- <svg style="transform: translateY(-2px);" width="10" height="10" viewBox="0 0 18 18" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3333 8.33334L9 16.6667L0.666664 8.33334" stroke="black"/>
+                </svg> -->
+            </div>                
+            <div>
+                <ul class="header-top__list">
+                    <li class="header-top__item">
+                        <a id="account">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-top__item notification-icon notification-have">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header-top__item messages-icon messages-have">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                            </svg>
+                            <a class="number-of-messages">
+                                2
+                            </a>
+                        </a>
+                    </li>
+                    <li class="header-top__item">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-mid">
+        <div class="container header-mid__container">
+            <div>
+                <a href="">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text">
+                    <button class="search-bar__btn">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-account" class="modal-account">
+        <div class="modal-account__content">
+            <span class="close-account">
+                <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-x" fill="var(--color-white)" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+                </svg>
+            </span>
+            <span class="account__btn-back" id="account__btn-back">
+                <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                    <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </span>
+            <div class="account__first-block">
+                <!-- <a href="" class="account-btn account__come-in">Вход</a>
+                <a href="" class="account-btn account__registr">Регистрация</a> -->
+
+                <div>
+                    <form action="" class="form" id="form">
+                        <h2 class="form__title">Вход</h2>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder=" ">
+                            <label for="" class="form__label">
+                                Email
+                            </label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input form__input-password" placeholder=" ">
+                            <label for="" class="form__label">
+                                Пароль
+                            </label>
+                            <a class="forgot-password" href="">Напомнить пароль</a>
+                        </div>
+
+                        <div class="form__btns">
+                            <button class="form__btn">
+                                Войти
+                            </button>
+                            <a class="form__btn" id="form-registr-choice__btn">
+                                Регистрация
+                            </a>
+                        </div>
+
+                    </form>
+
+                    <div class="registr__choice" id="registr__choice">
+                        <h3 class="registr__choice-ask">
+                            Кто вы?
+                        </h3>
+                        <div class="registr__choice-btns">
+                            <a class="registr__choice-btn" id="executor-choice-btn">
+                                Исполнитель
+                            </a>
+                            <a class="registr__choice-btn">
+                                Заказчик
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="registr__choice-ask-executor" id="registr__choice-ask-executor">
+                        <h3 class="registr__choice-ask">
+                            Исполнитель
+                        </h3>
+                        <div class="registr__choice-btns">
+                            <a class="registr__choice-btn">
+                                Физ. лицо
+                            </a>
+                            <a class="registr__choice-btn">
+                                Юр. лицо
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var modal = document.getElementById("modal-account");
+        var btn = document.getElementById("account");
+        var span = document.getElementsByClassName("close-account")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        var account_btn_back = document.getElementById("account__btn-back");
+
+        var registr_choice = document.getElementById("registr__choice");
+        var registr_btn = document.getElementById("form-registr-choice__btn");
+        var login_in = document.getElementById("form");
+
+        registr_btn.onclick = function() {
+            registr_choice.style.display = "block";
+            login_in.style.display = "none";
+            account_btn_back.style.display = "block";
+        }
+
+
+        var ask_executor = document.getElementById("registr__choice-ask-executor");
+        var executor_choice_btn = document.getElementById("executor-choice-btn");
+
+        executor_choice_btn.onclick = function() {
+            ask_executor.style.display = "block";
+            registr_choice.style.display = "none";
+        }        
+
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+            registr_choice.style.display = "none";
+            login_in.style.display = "block";
+            ask_executor.style.display = "none";
+            account_btn_back.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                registr_choice.style.display = "none";
+                login_in.style.display = "block";
+                ask_executor.style.display = "none";
+                account_btn_back.style.display = "none";
+            }
+        }
+        
+
+        account_btn_back.onclick = function() {
+            if (registr_choice.style.display == "block") {
+                registr_choice.style.display = "none";
+                login_in.style.display = "block";
+                account_btn_back.style.display = "none";
+            }
+            else if (ask_executor.style.display == "block") {
+                ask_executor.style.display = "none";
+                registr_choice.style.display = "block";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

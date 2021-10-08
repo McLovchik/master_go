@@ -1,0 +1,341 @@
+
+.doer__main {
+    /* background: url('../../img/tools.svg'); */
+}
+.doer__main .container .row {
+    padding: 30px 100px;
+}
+.doer__name {
+    /* margin-bottom: 20px; */
+}
+.doer__ava {
+    margin-right: 20px;
+}
+.doer__ava img {
+    width: 155px;
+    height: 160px;
+}
+.doer__profile-block {
+    display: flex;
+}
+.doer__profile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.doer__checked-icon {
+    margin-bottom: 5px;
+}
+
+.doer__up .col-lg-4 {
+    margin-top: 10px;
+    text-align: center;
+}
+.doer__proffer {
+    background: var(--color-yellow);
+    color: var(--color-black);
+    border-radius: 5px;
+    padding: 5px 17px;
+    transform: translateY(50px);
+    font-size: 18px;
+    transition: background-color .3s, color .3s, box-shadow .3s;
+}
+.doer__proffer:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    box-shadow: 1px 2px 3px 2px var(--color-black);
+}
+.doer__under-proffer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.doer__mid-about {
+    line-height: 18px;
+    font-size: 14px;
+}
+.doer__mid-about-proffer {
+    margin: 10px 0;
+    background-color: var(--color-white-yellow);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+} 
+
+.doer__works {
+    text-align: center;
+}
+
+
+.click-to-hide__head {
+    font-weight: 700;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* border-bottom: 1px solid var(--color-black); */
+
+}
+
+
+#hidden-element__list, #hidden-element__list1 {
+    display: none;
+}
+
+.doer__services-item {
+    display: flex;
+    flex-direction: column;    
+}
+.doer__services-item a {
+    /* border-bottom: 1px solid black; */
+}
+
+
+.doer__portfolio {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.doer__portfolio-item {
+    background: var(--color-white);
+    border: 3px solid var(--color-black);
+    border-radius: 10px;
+    /* padding: 7px 7px 0px 3px; */
+    box-shadow: 0 6px 10px 7px rgb(0 0 0 / 8%);
+    margin-right: 10px;
+}
+.doer__portfolio-photo img {
+    /* height: 150px; */
+    width: 100%;
+    /* border: 2px solid var(--color-yellow); */
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.doer__portfolio-header {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.doer__portfolio-photo-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: f;// */
+}
+.doer__portfolio-item-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doer__comments-item-block {
+    background: var(--color-white);
+    border-radius: 10px;
+    padding: 10px;
+}
+.doer__comments-up {
+    display: flex;
+    border-bottom: 1px solid var(--color-black);
+    padding-bottom: 5px;
+}
+.doer__comments-ava img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid var(--color-black);
+}
+.doer__comments-down {
+    padding-top: 10px;
+}
+.doer__comments-time {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.doer__comments-item {
+    margin-top: 20px;
+}
+
+.doer__profile-up {
+    display: flex;
+    margin-bottom: 20px;
+}
+.doer__user-btns {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+.doer__user-btn {
+    background-color: #808080;
+    color: var(--color-white);
+    padding: 7px;
+    border-radius: 10px;
+    transition: background-color .3s, color .3s;
+}
+.doer__user-btn:last-child {
+    margin-left: 10px;
+}
+.doer__user-btn:hover {
+    background-color: #666;
+    color: var(--color-white);
+}
+
+
+.doer__main .container .doer__up {
+    padding: 30px 100px 10px 100px;
+}
+
+.doer__profile-dislike {
+    transform: translateY(3px);
+}
+
+@media (max-width: 1200px) {
+    .doer__main {
+        font-size: 14px;
+    }
+    .doer__name {
+        font-size: 21px;
+    }
+    .doer__ava img {
+        height: 140px;
+        width: 130px;
+    }
+    .doer__profile-right {
+        font-size: 14px;
+    }
+    .doer__proffer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .doer__portfolio-head {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .doer__up .col-lg-4 {
+        margin-top: 40px;
+    }
+    .doer__under-proffer {
+        margin-top: 13px;
+    }
+    .doer__main .container .row {
+        padding: 20px 50px;
+    }
+    .doer__works {
+        margin-top: 15px;
+    }
+    .doer__portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .doer__portfolio-item {
+        margin-right: 0;
+        margin-bottom: 17px;
+        width: 50%;
+    }
+    .doer__portfolio-header {
+        font-size: 16px;
+    }
+    .doer__portfolio-item-empty {
+        padding: 40px 0;
+    }
+}
+
+/* @media (max-width: 768px) {
+
+} */
+
+/* @media (max-width: 575px) and (min-width: 415px) {
+
+} */
+
+@media (max-width: 520px) {
+    .doer__main {
+        font-size: 10px;
+    }
+    .doer__profile-up {
+        flex-direction: column;
+    }
+    .doer__user-btns {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .content__under-ava-svg svg {
+        width: 15px;
+        height: 15px;
+    }
+    .doer__main .stars img {
+        width: 12px;
+        height: 12px;
+    }
+    .doer__profile-like-block svg {
+        width: 16px;
+        height: 16px;
+    }
+    .doer__profile-likes:last-child {
+        transform: translateY(2px);
+    }
+    .doer__profile-dislike {
+        transform: translateY(1px);
+    }
+    .doer__name .content__under-ava-svg svg {
+        width: 23px;
+        height: 23px;
+    }
+    .doer__mid-about-header {
+        font-size: 16px;
+    }
+    .types-of-jobs__header {
+        font-size: 16px;
+    }
+    .doer__works {
+        font-size: 12px;
+    }
+    .doer__comments-head {
+        font-size: 16px;
+    }
+    .doer__comments-name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .doer__profile-block {
+        flex-direction: column;
+    }
+    .doer__ava img {
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .doer__ava {
+        margin-right: 0;
+    }
+    .doer__checked-icon {
+        margin-bottom: 5px;
+    }
+    .doer__top-icon {
+        margin-bottom: 5px;
+    }
+    .doer__age {
+        margin-bottom: 5px;
+    }
+    .doer__cities {
+        margin-bottom: 5px;
+    }
+    .stars {
+        margin-bottom: 5px;
+    }
+    .doer__comments-time {
+        font-size: 12px;
+    }
+}
+
