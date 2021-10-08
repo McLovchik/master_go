@@ -138,13 +138,22 @@ h6:hover {
 .messages-icon {
     position: relative;
 }
-.number-of-messages {
+.messages-have:after {
     position: absolute;
-    font-size: 10px;
-    top: 15px;
+    content: '2';
+    font-size: 9px;
+    bottom: -5px;
 }
-.number-of-messages:hover {
-    color: var(--color-yellow)
+.notification-icon {
+    position: relative;
+}
+.notification-have:after {
+    position: absolute;
+    content: '.';
+    top: -85%;
+    right: 29%;
+    font-size: 30px;
+    line-height: 1;
 }
 
 /* header-mid */
@@ -1045,6 +1054,11 @@ background-size: 125%;
 
     /* cards  */
 
+
+
+    .header .dropdown-menu {
+        margin-top: 0 !important;
+    }
 
 }
 

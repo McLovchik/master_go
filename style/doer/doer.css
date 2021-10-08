@@ -339,3 +339,19 @@
     }
 }
 
+@media (max-width: 370px) {
+    .doer__main {
+        text-align: center;
+    }
+    .doer__user-btns {
+        display: block;
+        margin-top: 15px;
+    }
+    .doer__profile-likes {
+        justify-content: center;
+    }
+    .doer__portfolio-item {
+        width: 80%;
+    }
+}
+

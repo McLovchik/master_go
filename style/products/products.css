@@ -164,3 +164,15 @@
     display: flex;
     justify-content: right;
 }
+
+@media (max-width: 575px) {
+    .products__item-block {
+        border: none;
+        border-radius: 0;
+        border-top: 3px solid var(--color-black-grey);
+        border-bottom: 3px solid var(--color-black-grey);
+    }
+    .products__main h1 {
+        text-align: center;
+    }
+}

@@ -156,3 +156,30 @@
 
 /*  */
 
+@media (max-width: 420px) {
+    .modal-account__content {
+        width: 200px;
+        padding: 20px 47px;
+    }
+    .form__btns {
+        flex-direction: column;
+    }
+    .form__btn:first-child {
+        margin-bottom: 10px;
+        text-align: center !important;
+    }
+    #form-registr-choice__btn {
+        text-align: center;
+    }
+    .registr__choice-btns {
+        flex-direction: column;
+    }
+    .registr__choice-btn:first-child {
+        margin-bottom: 20px;
+    }
+    .registr__choice-btn {
+        padding: 15px 0 !important;
+        text-align: center;
+    }
+    
+}

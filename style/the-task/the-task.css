@@ -242,10 +242,26 @@ h4 {
 
 @media (max-width: 575px) {
     .task-main__header {
-        margin-left: 28px;
+        /* margin-left: 28px; */
+        text-align: center;
+    }
+    .task-main__description-list {
+        align-items: center;
     }
     .task-main__description {
         margin-left: 28px;
+    }
+    .task-main__description-item {
+        font-size: 16px !important;
+    }
+    .task__right-content {
+        border: none;
+        border-radius: 0;
+        border-top: 2px solid var(--color-yellow);
+        border-bottom: 2px solid var(--color-yellow);
+    }
+    .task-user {
+        border-radius: 0;
     }
 }
 
