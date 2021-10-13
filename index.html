@@ -13,25 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
     <title>master_go</title>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script defer src="js/chief-slider.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const slider = new ChiefSlider('.slider-for-autoplay', {
-                loop: false,
-            });
-            const slider1 = new ChiefSlider('.slider-for-autoplay1', {
-                loop: false,
-            });
-        });
-    </script>
-    <!--  -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
-	<script src="js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
-    <!--  -->
     <link rel="stylesheet" href="style/simplebar.css"/>
-    <script src="js/simplebar.min.js"></script>
     <style type="text/css">
         .navbar .megamenu{ padding: 1rem; }
         /* ============ desktop view ============ */
@@ -53,78 +35,7 @@
             }
         }
         /* ============ mobile view .end// ============ */
-        </style>
-
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", function(){
-                /////// Prevent closing from click inside dropdown
-                document.querySelectorAll('.dropdown-menu').forEach(function(element){
-                    element.addEventListener('click', function (e) {
-                        e.stopPropagation();
-                    });
-                })
-            }); 
-            // DOMContentLoaded  end
-        </script>
-        <script src="js/jquery.min.js"></script>    
-        <script src="js/owl.carousel.js"></script>
-        <script>
-            $(function() {
-                // Owl Carousel
-                var owl1 = $(".owl-carousel1");
-                owl1.owlCarousel({
-                    // items: 3,
-                    // margin: 10,
-                    // loop: true,
-                    // nav: true,
-    
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 1000,
-                    autoplaySpeed: 500,
-                    autoplayHoverPause: true,
-                    slideTransition: 'ease-in-out',
-                    items: 1,
-                    nav: false,
-                    dots: false,
-    
-                    responsive: { //адаптивность
-                        600: {
-                        items: 1
-                        }
-                    }
-                });
-            });
-
-            $(function() {
-                // Owl Carousel
-                var owl2 = $(".owl-carousel2");
-                owl2.owlCarousel({
-                    // items: 3,
-                    // margin: 10,
-                    // loop: true,
-                    // nav: true,
-    
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 1000,
-                    autoplaySpeed: 500,
-                    autoplayHoverPause: true,
-                    slideTransition: 'ease-in-out',
-                    items: 1,
-                    nav: false,
-                    dots: false,
-    
-                    responsive: { //адаптивность
-                        600: {
-                        items: 1
-                        }
-                    }
-                });
-            });
-        </script>
-        <script src="js/for-tooltip-1.js"></script>
-        <script src="js/for-tooltip-2.js"></script>    
+    </style>
 </head>
 <body>
     <header class="header">
@@ -238,8 +149,9 @@
                                                     <div class="content__item-block content__item-vip">
                                                         <div class="content__item-top">
                                                             <div class="content__item-top-left">
-                                                                <div>
-                                                                    <div class="content__ava"></div>
+                                                                <div class="content__item-top-left-left">
+                                                                    <div class="content__ava">
+                                                                    </div>
                                                                     <div class="content__under-ava">
                                                                         <a href="" class="content__under-ava-svg checked-user-icon">
                                                                             <svg class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
@@ -278,14 +190,16 @@
                                                                         </a>   
                                                                     </div>
                                                                 </div>
-                                                                <div>
-                                                                    <h2 class="header-two">Владимир Владимиров</h2>
-                                                                    <div class="stars">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-white.svg">
+                                                                <div class="content__item-top-mid">
+                                                                    <div class="content__item-top-left-right">
+                                                                        <h2 class="header-two">Владимир Владимиров</h2>
+                                                                        <div class="stars">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-white.svg">
+                                                                        </div>
                                                                     </div>
                                                                     <div class="options">
                                                                         <button class="high-priority_call">
@@ -293,22 +207,32 @@
                                                                                 Срочный вызов
                                                                             </a>
                                                                         </button>
-                                                                        <button class="two-four_seven">
-                                                                            <a href="">
-                                                                                24/7
-                                                                            </a>
-                                                                        </button>
+                                                                        <div style="display: flex;">
+                                                                            <button class="two-four_seven">
+                                                                                <a href="">
+                                                                                    24/7
+                                                                                </a>
+                                                                            </button>
+                                                                            <button class="online-btn">
+                                                                                <a href="">
+                                                                                    Online
+                                                                                </a>
+                                                                            </button>
+                                                                            <svg style="transform: translate(3px, 3px);" class="content__ava-love" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(254, 191, 0)" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                                            </svg>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="content__item-top-right">
-                                                                <a class="vip-user-text">
-                                                                    <b>VIP</b>
-                                                                </a>
-                                                                <a href="">
+                                                                <a href="tel:+7 (499) 535-64-34">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(254, 191, 0)" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                                                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                                                                     </svg>  
+                                                                </a>
+                                                                <a class="vip-user-text">
+                                                                    <b>VIP</b>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -332,7 +256,7 @@
                                                                 </table>
                                                             </div>
                                                             <div class="content__item-bottom">
-                                                                <div class="slider">
+                                                                <div class="slider slider-for-autoplay">
                                                                     <div class="slider__wrapper">
                                                                       <div class="slider__items">
                                                                         <div class="slider__item"></div>
@@ -354,8 +278,9 @@
                                                         <div class="content__item-block content__item-vip">
                                                             <div class="content__item-top">
                                                                 <div class="content__item-top-left">
-                                                                    <div>
-                                                                        <div class="content__ava"></div>
+                                                                    <div class="content__item-top-left-left">
+                                                                        <div class="content__ava">
+                                                                        </div>
                                                                         <div class="content__under-ava">
                                                                             <a href="" class="content__under-ava-svg checked-user-icon">
                                                                                 <svg class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
@@ -394,14 +319,16 @@
                                                                             </a>   
                                                                         </div>
                                                                     </div>
-                                                                    <div>
-                                                                        <h2 class="header-two">Владимир Владимиров</h2>
-                                                                        <div class="stars">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-white.svg">
+                                                                    <div class="content__item-top-mid">
+                                                                        <div class="content__item-top-left-right">
+                                                                            <h2 class="header-two">Владимир Владимиров</h2>
+                                                                            <div class="stars">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-white.svg">
+                                                                            </div>
                                                                         </div>
                                                                         <div class="options">
                                                                             <button class="high-priority_call">
@@ -409,22 +336,32 @@
                                                                                     Срочный вызов
                                                                                 </a>
                                                                             </button>
-                                                                            <button class="two-four_seven">
-                                                                                <a href="">
-                                                                                    24/7
-                                                                                </a>
-                                                                            </button>
+                                                                            <div style="display: flex;">
+                                                                                <button class="two-four_seven">
+                                                                                    <a href="">
+                                                                                        24/7
+                                                                                    </a>
+                                                                                </button>
+                                                                                <button class="online-btn">
+                                                                                    <a href="">
+                                                                                        Online
+                                                                                    </a>
+                                                                                </button>
+                                                                                <svg style="transform: translate(3px, 3px);" class="content__ava-love" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(254, 191, 0)" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                                                </svg>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="content__item-top-right">
-                                                                    <a class="vip-user-text">
-                                                                        <b>VIP</b>
-                                                                    </a>
-                                                                    <a href="">
+                                                                    <a href="tel:+7 (499) 535-64-34">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(254, 191, 0)" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                                                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                                                                         </svg>  
+                                                                    </a>
+                                                                    <a class="vip-user-text">
+                                                                        <b>VIP</b>
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -448,7 +385,7 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="content__item-bottom">
-                                                                    <div class="slider">
+                                                                    <div class="slider slider-for-autoplay">
                                                                         <div class="slider__wrapper">
                                                                           <div class="slider__items">
                                                                             <div class="slider__item"></div>
@@ -579,8 +516,9 @@
                                                     <div class="content__item-block content__item-vip">
                                                         <div class="content__item-top">
                                                             <div class="content__item-top-left">
-                                                                <div>
-                                                                    <div class="content__ava"></div>
+                                                                <div class="content__item-top-left-left">
+                                                                    <div class="content__ava">
+                                                                    </div>
                                                                     <div class="content__under-ava">
                                                                         <a href="" class="content__under-ava-svg checked-user-icon">
                                                                             <svg class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
@@ -619,14 +557,16 @@
                                                                         </a>   
                                                                     </div>
                                                                 </div>
-                                                                <div>
-                                                                    <h2 class="header-two">Владимир Владимиров</h2>
-                                                                    <div class="stars">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-black.svg">
-                                                                        <img class="star" src="img/star-white.svg">
+                                                                <div class="content__item-top-mid">
+                                                                    <div class="content__item-top-left-right">
+                                                                        <h2 class="header-two">Владимир Владимиров</h2>
+                                                                        <div class="stars">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-black.svg">
+                                                                            <img class="star" src="img/star-white.svg">
+                                                                        </div>
                                                                     </div>
                                                                     <div class="options">
                                                                         <button class="high-priority_call">
@@ -634,22 +574,32 @@
                                                                                 Срочный вызов
                                                                             </a>
                                                                         </button>
-                                                                        <button class="two-four_seven">
-                                                                            <a href="">
-                                                                                24/7
-                                                                            </a>
-                                                                        </button>
+                                                                        <div style="display: flex;">
+                                                                            <button class="two-four_seven">
+                                                                                <a href="">
+                                                                                    24/7
+                                                                                </a>
+                                                                            </button>
+                                                                            <button class="online-btn">
+                                                                                <a href="">
+                                                                                    Online
+                                                                                </a>
+                                                                            </button>
+                                                                            <svg style="transform: translate(3px, 3px);" class="content__ava-love" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(254, 191, 0)" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                                            </svg>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="content__item-top-right">
-                                                                <a class="vip-user-text">
-                                                                    <b>VIP</b>
-                                                                </a>
-                                                                <a href="">
+                                                                <a href="tel:+7 (499) 535-64-34">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(254, 191, 0)" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                                                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                                                                     </svg>  
+                                                                </a>
+                                                                <a class="vip-user-text">
+                                                                    <b>VIP</b>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -673,7 +623,7 @@
                                                                 </table>
                                                             </div>
                                                             <div class="content__item-bottom">
-                                                                <div class="slider">
+                                                                <div class="slider slider-for-autoplay">
                                                                     <div class="slider__wrapper">
                                                                       <div class="slider__items">
                                                                         <div class="slider__item"></div>
@@ -695,8 +645,9 @@
                                                         <div class="content__item-block content__item-vip">
                                                             <div class="content__item-top">
                                                                 <div class="content__item-top-left">
-                                                                    <div>
-                                                                        <div class="content__ava"></div>
+                                                                    <div class="content__item-top-left-left">
+                                                                        <div class="content__ava">
+                                                                        </div>
                                                                         <div class="content__under-ava">
                                                                             <a href="" class="content__under-ava-svg checked-user-icon">
                                                                                 <svg class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
@@ -735,14 +686,16 @@
                                                                             </a>   
                                                                         </div>
                                                                     </div>
-                                                                    <div>
-                                                                        <h2 class="header-two">Владимир Владимиров</h2>
-                                                                        <div class="stars">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-black.svg">
-                                                                            <img class="star" src="img/star-white.svg">
+                                                                    <div class="content__item-top-mid">
+                                                                        <div class="content__item-top-left-right">
+                                                                            <h2 class="header-two">Владимир Владимиров</h2>
+                                                                            <div class="stars">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-black.svg">
+                                                                                <img class="star" src="img/star-white.svg">
+                                                                            </div>
                                                                         </div>
                                                                         <div class="options">
                                                                             <button class="high-priority_call">
@@ -750,22 +703,32 @@
                                                                                     Срочный вызов
                                                                                 </a>
                                                                             </button>
-                                                                            <button class="two-four_seven">
-                                                                                <a href="">
-                                                                                    24/7
-                                                                                </a>
-                                                                            </button>
+                                                                            <div style="display: flex;">
+                                                                                <button class="two-four_seven">
+                                                                                    <a href="">
+                                                                                        24/7
+                                                                                    </a>
+                                                                                </button>
+                                                                                <button class="online-btn">
+                                                                                    <a href="">
+                                                                                        Online
+                                                                                    </a>
+                                                                                </button>
+                                                                                <svg style="transform: translate(3px, 3px);" class="content__ava-love" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(254, 191, 0)" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                                                </svg>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="content__item-top-right">
-                                                                    <a class="vip-user-text">
-                                                                        <b>VIP</b>
-                                                                    </a>
-                                                                    <a href="">
+                                                                    <a href="tel:+7 (499) 535-64-34">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(254, 191, 0)" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                                                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                                                                         </svg>  
+                                                                    </a>
+                                                                    <a class="vip-user-text">
+                                                                        <b>VIP</b>
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -789,7 +752,7 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="content__item-bottom">
-                                                                    <div class="slider">
+                                                                    <div class="slider slider-for-autoplay">
                                                                         <div class="slider__wrapper">
                                                                           <div class="slider__items">
                                                                             <div class="slider__item"></div>
@@ -1002,6 +965,7 @@
                             <a>Фильтры</a>
                         </div>
                         <div class="customScroll" data-simplebar>
+                            
                             <button class="accordion">Section 1</button>
                             <div class="panel">
                                 <div class="panel__block">
@@ -1181,7 +1145,7 @@
                         <div class="content__item-block content__item-vip">
                             <div class="content__item-top">
                                 <div class="content__item-top-left">
-                                    <div>
+                                    <div class="content__item-top-left-left">
                                         <div class="content__ava">
                                         </div>
                                         <div class="content__under-ava">
@@ -1222,14 +1186,16 @@
                                             </a>   
                                         </div>
                                     </div>
-                                    <div>
-                                        <h2 class="header-two">Владимир Владимиров</h2>
-                                        <div class="stars">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-white.svg">
+                                    <div class="content__item-top-mid">
+                                        <div class="content__item-top-left-right">
+                                            <h2 class="header-two">Владимир Владимиров</h2>
+                                            <div class="stars">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-white.svg">
+                                            </div>
                                         </div>
                                         <div class="options">
                                             <button class="high-priority_call">
@@ -1256,13 +1222,13 @@
                                     </div>
                                 </div>
                                 <div class="content__item-top-right">
-                                    <a class="vip-user-text">
-                                        <b>VIP</b>
-                                    </a>
                                     <a href="tel:+7 (499) 535-64-34">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(254, 191, 0)" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                                         </svg>  
+                                    </a>
+                                    <a class="vip-user-text">
+                                        <b>VIP</b>
                                     </a>
                                 </div>
                             </div>
@@ -1286,7 +1252,7 @@
                                     </table>
                                 </div>
                                 <div class="content__item-bottom">
-                                    <div class="slider slider-for-autoplay">
+                                    <div class="slider slider-for-autoplay1">
                                         <div class="slider__wrapper">
                                           <div class="slider__items">
                                             <div class="slider__item"></div>
@@ -1304,11 +1270,12 @@
                         </div>
                     </li>
                     <li style="display: block;" class="col-lg-4 col-md-6 content__item">
-                        <div class="content__item-block content__item--no-vip">
+                        <div class="content__item-block content__item-no-vip">
                             <div class="content__item-top">
                                 <div class="content__item-top-left">
-                                    <div>
-                                        <div class="content__ava"></div>
+                                    <div class="content__item-top-left-left">
+                                        <div class="content__ava">
+                                        </div>
                                         <div class="content__under-ava">
                                             <a href="" class="content__under-ava-svg checked-user-icon">
                                                 <svg class="checked-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(254, 191, 0)" class="bi bi-shield-check" viewBox="0 0 16 16">
@@ -1338,17 +1305,25 @@
                                                         c2.162,5.764,7.673,9.583,13.829,9.583s11.668-3.819,13.829-9.583l29.538-78.769C223.463,233.855,219.593,225.342,211.955,222.478
                                                         z"/>
                                                 </svg>    
-                                            </a>                                             
+                                            </a>
+                                            <a href="" class="content__under-ava-svg top-user-icon">
+                                                <svg class="top-user-icon-tooltip" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="rgb(254, 191, 0)" class="bi bi-person-square" viewBox="0 0 16 16">
+                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                                                </svg>
+                                            </a>   
                                         </div>
                                     </div>
-                                    <div class="content__item-top-left-right">
-                                        <h2 class="header-two">Владимир Владимиров</h2>
-                                        <div class="stars">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-black.svg">
-                                            <img class="star" src="img/star-white.svg">
+                                    <div class="content__item-top-mid">
+                                        <div class="content__item-top-left-right">
+                                            <h2 class="header-two">Владимир Владимиров</h2>
+                                            <div class="stars">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-black.svg">
+                                                <img class="star" src="img/star-white.svg">
+                                            </div>
                                         </div>
                                         <div class="options">
                                             <button class="high-priority_call">
@@ -1367,15 +1342,21 @@
                                                         Online
                                                     </a>
                                                 </button>
+                                                <svg style="transform: translate(3px, 3px);" class="content__ava-love" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(254, 191, 0)" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="content__item-top-right">
-                                    <a href="">
+                                    <a href="tel:+7 (499) 535-64-34">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(254, 191, 0)" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                                        </svg>
+                                        </svg>  
+                                    </a>
+                                    <a class="vip-user-text">
+                                        <b>VIP</b>
                                     </a>
                                 </div>
                             </div>
@@ -1385,21 +1366,21 @@
                                         <tbody>
                                             <tr>
                                                 <td class="name padding__in-services">Завести автомобиль</td>
-                                                <td class="price padding__in-services">от 70.000 <span class="cur">руб</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="name padding__in-services">Отключить сигнализацию</td>
-                                                <td class="price padding__in-services">от 50.000 <span class="cur">руб</span></td>
+                                                <td class="price padding__in-services">от 10.000 <span class="cur">руб</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="name padding__in-services">Заменить колесо</td>
-                                                <td class="price padding__in-services">от 100.000 <span class="cur">руб</span></td>
+                                                <td class="price padding__in-services">от 20.000 <span class="cur">руб</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="name padding__in-services">Отключить сигнализацию</td>
+                                                <td class="price padding__in-services">от 40.000 <span class="cur">руб</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                                 <div class="content__item-bottom">
-                                    <div class="slider slider-for-autoplay1">
+                                    <div class="slider slider-for-autoplay2">
                                         <div class="slider__wrapper">
                                           <div class="slider__items">
                                             <div class="slider__item"></div>
@@ -1465,6 +1446,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/for-tooltip-1.js"></script>
+    <script src="js/for-tooltip-2.js"></script>  
     <script>
         tippy('.checked-user-icon-tooltip', {
             content: 'Проверенный пользователь',
@@ -1478,6 +1461,92 @@
             content: 'Top пользователь',
         });        
     </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer src="js/chief-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider1 = new ChiefSlider('.slider-for-autoplay1', {
+                loop: false,
+            });
+            const slider2 = new ChiefSlider('.slider-for-autoplay2', {
+                loop: false,
+            });
+        });
+    </script>
+    <!--  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+	<script src="js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <!--  -->
 
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        }); 
+        // DOMContentLoaded  end
+    </script>
+    <script>
+        $(function() {
+            // Owl Carousel
+            var owl1 = $(".owl-carousel1");
+            owl1.owlCarousel({
+                // items: 3,
+                // margin: 10,
+                // loop: true,
+                // nav: true,
+
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplaySpeed: 500,
+                autoplayHoverPause: true,
+                slideTransition: 'ease-in-out',
+                items: 1,
+                nav: false,
+                dots: false,
+
+                responsive: { //адаптивность
+                    600: {
+                    items: 1
+                    }
+                }
+            });
+        });
+
+        $(function() {
+            // Owl Carousel
+            var owl2 = $(".owl-carousel2");
+            owl2.owlCarousel({
+                // items: 3,
+                // margin: 10,
+                // loop: true,
+                // nav: true,
+
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplaySpeed: 500,
+                autoplayHoverPause: true,
+                slideTransition: 'ease-in-out',
+                items: 1,
+                nav: false,
+                dots: false,
+
+                responsive: { //адаптивность
+                    600: {
+                    items: 1
+                    }
+                }
+            });
+        });
+    </script>  
+    <script src="js/jquery.min.js"></script>    
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/simplebar.min.js"></script>
 </body>
 </html>
