@@ -101,8 +101,11 @@
 .field__wrapper {
     width: 100%;
     position: relative;
-    margin: 0px 0 30px 0;
+    /* margin: 0px 0 30px 0; */
     text-align: center;
+}
+.field__wrapper2 {
+    margin-bottom: 10px;
 }
 
 .field__wrapper-text {
@@ -124,31 +127,33 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
    
 .field__file-fake {
     height: 40px;
-    width: 267px;
+    /* width: 267px; */
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 0 15px;
     border: 1px solid #c7c7c7;
     border-radius: 3px 0 0 3px;
     border-right: none;
 }
-   
+.field__file-fake p {
+    margin: 0 15px;
+}   
 .field__file-button {
-    width: 80px;
+    width: 20%;
     height: 40px;
     background: var(--color-black);
     border: 1px solid var(--color-black);
@@ -173,4 +178,53 @@
     background-color: var(--color-yellow);
     color: var(--color-black);
     border-color: #c7c7c7;
+}
+
+label {
+	position: relative;
+	cursor: pointer;
+    margin-bottom: 20px;
+}
+  
+input[type="checkbox"] {
+	position: absolute;
+	left: -999em;
+}
+/* input[type="checkbox"] + span:before {
+    display: none;
+}
+input[type="checkbox"]:checked + span:before {
+    display: none;
+} */
+/* input[type="checkbox"] + span:after {
+    position: absolute;
+    right: 0;
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 0;
+	vertical-align: middle;
+	border: 1px solid var(--color-black);
+	border-radius: 3px;
+	font: bold 18px/7px Verdana, sans-serif;
+	color: var(--color-black);
+}
+  
+input[type="checkbox"]:checked + span:after {
+	content: "✓";
+	border-color: var(--color-black);
+} */
+
+.cp__category-p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.field__file-wrapper-vacancy {
+    margin-bottom: 5px;
+}
+.field__wrapper-text-cp {
+    text-align: left;
+    margin-left: 0 ;
 }

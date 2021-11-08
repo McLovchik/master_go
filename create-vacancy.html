@@ -15,8 +15,7 @@
 
 
 
-
-    <title>Registr-face</title>
+    <title>cv</title>
 </head>
 <body>
     
@@ -86,187 +85,156 @@
     <main class="registr__main">
         <div class="">
             <div class="registr">
-                <h1 class="registr__header">Регистрация заказчика</h1>
+                <h1 class="registr__header">Создание вакансии</h1>
                 <form action class="form form-registr"> <!-- form-registr -->
 
-                    <div class="field__wrapper">
-                        
+                    
+                   <div class="form__group">
+                        <div class="field__wrapper ">
 
-                        <p class="field__wrapper-text">Аватарка</p>
-                        <input 
-                            data-validate-field="file"
-                            name="file" 
-                            type="file"
-                            name="file" 
-                            id="field__file-2" 
-                            class="field field__file"
-                        >
-                           
-                        <label class="field__file-wrapper" for="field__file-2">
-                            <div class="field__file-fake"><p>Файл не выбран</p></div>
-                            <div class="field__file-button">Выбрать</div>
-                        </label>
-                           
-                    </div>
+                            <p class="field__wrapper-text">Логотип</p>
+                            <input 
+                                data-validate-field="logo"
+                                name="file" 
+                                type="file"
+                                name="file" 
+                                id="field__file-2" 
+                                class="field field__file field__file1"
+                            >
+                                
+                            <label class="field__file-wrapper field__file-wrapper-vacancy" for="field__file-2">
+                                <div class="field__file-fake field__file-fake1"><p>Файл не выбран</p></div>
+                                <div class="field__file-button">Выбрать</div>
+                            </label>
+                                
+                        </div>
+                   </div>
 
-                    <script>
-                        let fields = document.querySelectorAll('.field__file');
-                        Array.prototype.forEach.call(fields, function (input) {
-                          let label = input.nextElementSibling,
-                            labelVal = label.querySelector('.field__file-fake').innerText;
-                      
-                          input.addEventListener('change', function (e) {
-                            let countFiles = '';
-                            if (this.files && this.files.length == 1)
-                              countFiles = this.files.length;
-                      
-                            if (countFiles)
-                              label.querySelector('.field__file-fake').innerText = 'Файл выбран';
-                            else
-                              label.querySelector('.field__file-fake').innerText = labelVal;
-                          });
-                        });
-                    </script>
-
-
+                    
                     <div class="form__group registr__element">
                         <input 
-                            data-validate-field="surname"
-                            class="form__input" 
-                            type="date"
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Дата рождения</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="surname"
+                            data-validate-field="header"
                             class="form__input" 
                             type="text"
                             id="" 
                             placeholder=" "
                         >
-                        <label for="" class="form__label">Фамилия:</label>
+                        <label for="" class="form__label">Название вакансии:</label>
                     </div>
+                    
                     <div class="form__group registr__element">
                         <input 
-                            data-validate-field="first_name"
+                            data-validate-field="decrip"
                             class="form__input" 
                             type="text" 
                             name="" 
                             id="" 
                             placeholder=" "
                         >
-                        <label for="" class="form__label">Имя:</label>
+                        <label for="" class="form__label">Описание компании:</label>
                     </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            class="form__input" 
-                            type="text"
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Отчество:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="login"
-                            class="form__input" 
-                            type="text" 
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Логин:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="password"
-                            class="form__input" 
-                            type="password" 
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Пароль:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="password"
-                            class="form__input password" 
-                            type="password" 
-                            name="" 
-                            id="password-input"
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Повторите пароль:</label>
-                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="mail"
-                            class="form__input" 
-                            type="email" 
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Почта:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="tel"
-                            data-validate-rules="phone"
-                            class="form__input" 
-                            type="tel" 
-                            name="" 
-                            id=""
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Номер телефона:</label>
-                    </div>
+
                     <div class="form__group registr__element">
                         <input 
                             data-validate-field="city"
                             class="form__input" 
-                            type="text"
+                            type="text" 
                             name="" 
                             id="" 
                             placeholder=" "
                         >
-                        <label for="" class="form__label">Город:</label>
+                        <label for="" class="form__label">Местонахождение:</label>
                     </div>
+
                     <div class="form__group registr__element">
                         <input 
+                            data-validate-field="experience"
                             class="form__input" 
                             type="text" 
                             name="" 
                             id="" 
                             placeholder=" "
                         >
-                        <label for="" class="form__label">Районы:</label>
-                        <!--  registr__element -->
+                        <label for="" class="form__label">Опыт работы:</label>
                     </div>
-                     
-                    <div class="checkselect">
-                        <label><input type="checkbox" name="brands[]" value="1"><span> Poremque</span></label>
-                        <label><input type="checkbox" name="brands[]" value="2"><span> Facere</span></label>
-                        <label><input type="checkbox" name="brands[]" value="3"><span> Paliquam</span></label>
-                        <label><input type="checkbox" name="brands[]" value="4"><span> Perspiciatis</span></label>
-                        <label><input type="checkbox" name="brands[]" value="5"><span> Distinctio</span></label>
-                        <label><input type="checkbox" name="brands[]" value="6"><span> Sunt</span></label>
+
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="conditions"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Условия работы:</label>
                     </div>
                     
-                    <div class="form-registr__btn-block">
-                        <button class="form-registr__btn">
-                            Отправить
-                        </button>
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="graphic"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">График работы:</label>
                     </div>
 
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="requirements"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Требования:</label>
+                    </div>
 
-                     
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="responsibilities"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Обязанности:</label>
+                    </div>
+
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="salary"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Зарплата:</label>
+                    </div>
+
+                    <div class="form__group registr__element">
+                        <input 
+                            data-validate-field="contacts"
+                            class="form__input" 
+                            type="text" 
+                            name="" 
+                            id="" 
+                            placeholder=" "
+                        >
+                        <label for="" class="form__label">Контакты:</label>
+                    </div>
+
+                    <div class="form-registr__btn-block">
+                        <button class="form-registr__btn">
+                            Создать
+                        </button>
+                    </div>
 
 
                 </form>
@@ -274,88 +242,27 @@
         </div>
     </main>
 
-    <script>
-        function show_hide_password(target){
-            var input = document.getElementById('password-input');
-            if (input.getAttribute('type') == 'password') {
-                target.classList.add('view');
-                input.setAttribute('type', 'text');
-            } else {
-                target.classList.remove('view');
-                input.setAttribute('type', 'password');
-            }
-            return false;
-        }
-    </script>
 
     <script src="registr/just-validate.js"></script>
     <script src="registr/inputmask.js"></script>
+
     <script>
 
-
-
-
-
-        var selector = document.querySelector("input[type='tel']");
-        var im = new Inputmask("+7 ( 999 ) 999-99-99");
-
-        im.mask(selector);
-
         new JustValidate('.form-registr', {
-            rules: {
-                // name: {
-                //     required: true,
-                //     minLength: 2,
-                //     maxLength: 30
-                // },
-                tel: {
-                    required: true,
-                    function: (name, value) => {
-                        const phone = selector.inputmask.unmaskedvalue()
-                        console.log(phone)
-                        return Number(phone) && phone.length === 10
-                    }
-                },
-                mail: {
-                    required: true,
-                    email: true
-                },
-                first_name: {
-                    required: true,
-                    minLength: 2,
-                    maxLength: 30
-                },
-                surname: {
-                    required: true,
-                    minLength: 2,
-                    maxLength: 30
-                },
-                login: {
-                    required: true,
-                    minLength: 6,
-                    maxLength: 20
-                },
-                city: {
+            rules: {                      
+                file1: {
                     required: true
                 },
-                file: {
+                file2: {
+                    // required: true
+                },
+                header: {
+                    required: true
+                },
+                decrip: {
                     required: true
                 }
-            },
-            messages: {
-                name: {
-                    required: 'Как вас зовут?'
-                },
-                tel: {
-                    required: 'Укажите ваш телефон'
-                },
-                mail: {
-                    required: 'Укажите ваш e-mail'
-                },  
-                // login: {
-                //     required:
-                // }
-            }   
+            },             
         });
     </script>
 
@@ -415,6 +322,23 @@
         
         $('.checkselect').checkselect();
     </script>
-
+    <script>
+        let fields = document.querySelectorAll('.field__file1');
+        Array.prototype.forEach.call(fields, function (input) {
+        let label = input.nextElementSibling,
+            labelVal = label.querySelector('.field__file-fake1 p').innerText;
+    
+        input.addEventListener('change', function (e) {
+            let countFiles = '';
+            if (this.files && this.files.length == 1)
+            countFiles = this.files.length;
+    
+            if (countFiles)
+            label.querySelector('.field__file-fake1 p').innerText = 'Файл выбран';
+            else
+            label.querySelector('.field__file-fake1 p').innerText = labelVal;
+        });
+        });
+    </script>
 </body>
 </html>

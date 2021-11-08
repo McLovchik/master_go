@@ -91,6 +91,7 @@ button {
     --color-black-grey: #52565a;
     --color-blue: #00c2cb;
     --color-black-yellow: #60540B;
+    --color-red: #dc143c;
 }
 
 a:hover {
@@ -450,6 +451,7 @@ h6:hover {
     display: flex;
     justify-content: center;
     margin-top: 11px;
+    margin-bottom: 11px;
 }
 .filter-find {
     background-color: var(--color-yellow);
@@ -679,6 +681,7 @@ h6:hover {
     color: var(--color-black);
     padding: 2px 4px;
     width: fit-content;
+    font-weight: 600;
 }
 .content__item-mid {
     margin-top: 0px;

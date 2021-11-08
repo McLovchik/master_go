@@ -15,8 +15,7 @@
 
 
 
-
-    <title>Registr-face</title>
+    <title>cp</title>
 </head>
 <body>
     
@@ -86,34 +85,35 @@
     <main class="registr__main">
         <div class="">
             <div class="registr">
-                <h1 class="registr__header">Регистрация заказчика</h1>
+                <h1 class="registr__header">Создание порфтолио</h1>
                 <form action class="form form-registr"> <!-- form-registr -->
 
+                    
                     <div class="field__wrapper">
                         
 
-                        <p class="field__wrapper-text">Аватарка</p>
+                        <p class="field__wrapper-text field__wrapper-text-cp">Главная фотография</p>
                         <input 
-                            data-validate-field="file"
+                            data-validate-field="file1"
                             name="file" 
                             type="file"
                             name="file" 
                             id="field__file-2" 
-                            class="field field__file"
+                            class="field field__file field__file1"
                         >
                            
                         <label class="field__file-wrapper" for="field__file-2">
-                            <div class="field__file-fake"><p>Файл не выбран</p></div>
+                            <div class="field__file-fake field__file-fake1"><p>Файл не выбран</p></div>
                             <div class="field__file-button">Выбрать</div>
                         </label>
                            
                     </div>
 
                     <script>
-                        let fields = document.querySelectorAll('.field__file');
+                        let fields = document.querySelectorAll('.field__file1');
                         Array.prototype.forEach.call(fields, function (input) {
                           let label = input.nextElementSibling,
-                            labelVal = label.querySelector('.field__file-fake').innerText;
+                            labelVal = label.querySelector('.field__file-fake1 p').innerText;
                       
                           input.addEventListener('change', function (e) {
                             let countFiles = '';
@@ -121,135 +121,78 @@
                               countFiles = this.files.length;
                       
                             if (countFiles)
-                              label.querySelector('.field__file-fake').innerText = 'Файл выбран';
+                              label.querySelector('.field__file-fake1 p').innerText = 'Файл выбран';
                             else
-                              label.querySelector('.field__file-fake').innerText = labelVal;
+                              label.querySelector('.field__file-fake1 p').innerText = labelVal;
                           });
+                        });
+                    </script>
+
+
+                    <div class="field__wrapper field__wrapper2">
+                                            
+
+                        <p class="field__wrapper-text field__wrapper-text-cp">Остальные фотографии</p>
+                        <input 
+                            data-validate-field="file2"
+                            name="file" 
+                            type="file"
+                            name="file" 
+                            id="field__file-3" 
+                            class="field field__file field__file2"
+                            multiple
+                        >
+                        
+                        <label class="field__file-wrapper" for="field__file-3">
+                            <div class="field__file-fake field__file-fake2"><p>Файлы не выбраны</p></div>
+                            <div class="field__file-button">Выбрать</div>
+                        </label>
+                        
+                    </div>
+
+                    <script>
+                        let fields2 = document.querySelectorAll('.field__file2');
+                        Array.prototype.forEach.call(fields2, function (input) {
+                            let label = input.nextElementSibling,
+                                labelVal = label.querySelector('.field__file-fake2 p').innerText;
+                        
+                            input.addEventListener('change', function (e) {
+                                let countFiles = '';
+                                if (this.files && this.files.length >= 1)
+                                countFiles = this.files.length;
+                        
+                                if (countFiles)
+                                label.querySelector('.field__file-fake2 p').innerText = 'Файлы выбраны';
+                                else
+                                label.querySelector('.field__file-fake2 p').innerText = labelVal;
+                            });
                         });
                     </script>
 
 
                     <div class="form__group registr__element">
                         <input 
-                            data-validate-field="surname"
-                            class="form__input" 
-                            type="date"
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Дата рождения</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="surname"
+                            data-validate-field="header"
                             class="form__input" 
                             type="text"
                             id="" 
                             placeholder=" "
                         >
-                        <label for="" class="form__label">Фамилия:</label>
+                        <label for="" class="form__label">Название:</label>
                     </div>
                     <div class="form__group registr__element">
                         <input 
-                            data-validate-field="first_name"
+                            data-validate-field="decrip"
                             class="form__input" 
                             type="text" 
                             name="" 
                             id="" 
                             placeholder=" "
                         >
-                        <label for="" class="form__label">Имя:</label>
+                        <label for="" class="form__label">Описание:</label>
                     </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            class="form__input" 
-                            type="text"
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Отчество:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="login"
-                            class="form__input" 
-                            type="text" 
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Логин:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="password"
-                            class="form__input" 
-                            type="password" 
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Пароль:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="password"
-                            class="form__input password" 
-                            type="password" 
-                            name="" 
-                            id="password-input"
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Повторите пароль:</label>
-                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="mail"
-                            class="form__input" 
-                            type="email" 
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Почта:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="tel"
-                            data-validate-rules="phone"
-                            class="form__input" 
-                            type="tel" 
-                            name="" 
-                            id=""
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Номер телефона:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            data-validate-field="city"
-                            class="form__input" 
-                            type="text"
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Город:</label>
-                    </div>
-                    <div class="form__group registr__element">
-                        <input 
-                            class="form__input" 
-                            type="text" 
-                            name="" 
-                            id="" 
-                            placeholder=" "
-                        >
-                        <label for="" class="form__label">Районы:</label>
-                        <!--  registr__element -->
-                    </div>
-                     
+                    
+                    <p class="cp__category-p field__wrapper-text-cp">Категория исполнения</p> 
                     <div class="checkselect">
                         <label><input type="checkbox" name="brands[]" value="1"><span> Poremque</span></label>
                         <label><input type="checkbox" name="brands[]" value="2"><span> Facere</span></label>
@@ -258,15 +201,13 @@
                         <label><input type="checkbox" name="brands[]" value="5"><span> Distinctio</span></label>
                         <label><input type="checkbox" name="brands[]" value="6"><span> Sunt</span></label>
                     </div>
-                    
+            
+
                     <div class="form-registr__btn-block">
                         <button class="form-registr__btn">
-                            Отправить
+                            Создать
                         </button>
                     </div>
-
-
-                     
 
 
                 </form>
@@ -274,88 +215,27 @@
         </div>
     </main>
 
-    <script>
-        function show_hide_password(target){
-            var input = document.getElementById('password-input');
-            if (input.getAttribute('type') == 'password') {
-                target.classList.add('view');
-                input.setAttribute('type', 'text');
-            } else {
-                target.classList.remove('view');
-                input.setAttribute('type', 'password');
-            }
-            return false;
-        }
-    </script>
 
     <script src="registr/just-validate.js"></script>
     <script src="registr/inputmask.js"></script>
+
     <script>
 
-
-
-
-
-        var selector = document.querySelector("input[type='tel']");
-        var im = new Inputmask("+7 ( 999 ) 999-99-99");
-
-        im.mask(selector);
-
         new JustValidate('.form-registr', {
-            rules: {
-                // name: {
-                //     required: true,
-                //     minLength: 2,
-                //     maxLength: 30
-                // },
-                tel: {
-                    required: true,
-                    function: (name, value) => {
-                        const phone = selector.inputmask.unmaskedvalue()
-                        console.log(phone)
-                        return Number(phone) && phone.length === 10
-                    }
-                },
-                mail: {
-                    required: true,
-                    email: true
-                },
-                first_name: {
-                    required: true,
-                    minLength: 2,
-                    maxLength: 30
-                },
-                surname: {
-                    required: true,
-                    minLength: 2,
-                    maxLength: 30
-                },
-                login: {
-                    required: true,
-                    minLength: 6,
-                    maxLength: 20
-                },
-                city: {
+            rules: {                      
+                file1: {
                     required: true
                 },
-                file: {
+                file2: {
+                    // required: true
+                },
+                header: {
+                    required: true
+                },
+                decrip: {
                     required: true
                 }
-            },
-            messages: {
-                name: {
-                    required: 'Как вас зовут?'
-                },
-                tel: {
-                    required: 'Укажите ваш телефон'
-                },
-                mail: {
-                    required: 'Укажите ваш e-mail'
-                },  
-                // login: {
-                //     required:
-                // }
-            }   
+            },             
         });
     </script>
 
