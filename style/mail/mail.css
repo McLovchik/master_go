@@ -142,9 +142,6 @@ body {
 .mail__answer-now-answer {
     width: 100%;
 }
-.trumbowyg-button-pane {
-    display: none;
-}
 .mail__answer-now-answer textarea {
     width: 0px !important;
 }
@@ -229,6 +226,15 @@ body {
     background: none;
     padding: 7px 14px;
 }
+
+.mail__editorchik {
+    height: 200px;
+    width: 100%;
+}
+.mail__main .trumbowyg-box {
+    margin: 10px 0 20px 0;
+}
+
 @media (max-width: 991px) {
     .mail__choices {
         width: 100%;
@@ -263,7 +269,7 @@ body {
         font-size: 18px;
         margin-bottom: 10px;
     }
-    .trumbowyg-editor, .trumbowyg-textarea {
+    /* .trumbowyg-editor, .trumbowyg-textarea {
         margin-top: 10px !important;
         min-height: 200px !important;
         padding: 0px 10px 10px 10px !important;
@@ -273,7 +279,7 @@ body {
         margin: 0 !important;
         margin-bottom: 10px !important;
         border-radius: 10px;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -300,20 +306,20 @@ body {
     .mail__answer-now-header {
         font-size: 14px;
     }
-    .trumbowyg-editor, .trumbowyg-textarea {
+    /* .trumbowyg-editor, .trumbowyg-textarea {
         margin-top: 10px !important;
         min-height: 120px !important;
         padding: 0px 7px 7px 7px !important;
-    }
-    .trumbowyg-box, .trumbowyg-editor {
+    } */
+    /* .trumbowyg-box, .trumbowyg-editor {
         min-height: 120px !important;
         margin: 0 !important;
         margin-bottom: 10px !important;
         border-radius: 5px;
-    }
-    #editor {
+    } */
+    /* #editor {
         height: 120px !important;
-    }
+    } */
 }
 
 @media (max-width: 576px) {
