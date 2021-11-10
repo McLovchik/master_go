@@ -8,6 +8,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.vacancy__left {
+    margin-left: 20px;
+}
 .vacancy__header {
     font-size: 22px;
     font-weight: 700;
@@ -17,4 +20,69 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 6px;
+}
+.vacancy__city {
+    margin-bottom: 6px;
+}
+.vacancy__experience {
+    font-size: 15px;
+    color: var(--color-black-grey);
+    margin-bottom: 30px;
+}
+.vacancy__mini-header {
+    font-size: 18px;
+    font-weight: 600;
+}
+.vacancy__list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.vacancy__item {
+    list-style: unset;
+}
+.vacancy__graphic {
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.vacancy__btns {
+    margin-bottom: 20px;
+}
+.vacancy__btn-click {
+    background: var(--color-yellow);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.vacancy__btn-like {
+    background: var(--color-yellow);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.vacancy__btn-like svg {
+    transform: translateY(-2px);
+}
+
+.vacancy__company {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.vacancy__logo {
+    height: 70px;
+}
+.vacancy__right {
+    margin-right: 20px;
+}
+.vacancy__company-or-face {
+    margin-top: 10px;
+    color: var(--color-black-grey);
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-yellow);
+    padding-bottom: 15px;
+}
+.vacancy__company-descrip {
+    font-size: 14px;
 }

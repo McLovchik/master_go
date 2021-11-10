@@ -81,6 +81,8 @@ button {
 }
 /*  */
 
+*:focus-visible { outline: 0; }
+
 :root {
     --color-black: #0d0d0e;
     --color-yellow: rgb(254, 191, 0);

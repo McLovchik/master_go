@@ -10,12 +10,8 @@
     <link rel="stylesheet" href="style/mail/mail.css">
 
 
-    <script data-require="jquery@3.2.1" data-semver="3.2.1" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    
-    <link rel="stylesheet" href="style/mail/trumbowyg.css" />
-    <link rel="stylesheet" href="style/mail/trumbowyg.colors.css" />
-    
-    <script src="js/mail/trumbowyg-script.js"></script>
+    <script src="js/jquery.min.js"></script>
+
 
     <title>Mail</title>
 </head>
@@ -139,150 +135,7 @@
                                 
                             </div> -->
 
-                            <script src="js/mail/trumbowyg.js"></script>
-                            <script src="js/mail/trumbowyg.colors.js"></script>
-                            <script src="js/mail/trumbowyg.fontsize.js"></script>
-
-                            <script>
-                                $('#125').trumbowyg({
-                                    btns: [
-                                            ['strong', 'em'],
-                                            ['fontsize'],
-                                            ['unorderedList', 'orderedList'],
-                                            ],
-                                            plugins: {
-                                                fontsize: {
-                                                    sizeList: [
-                                                        '14px',
-                                                        '18px',
-                                                        '22px'
-                                                    ],
-                                                    allowCustomSize: false
-                                                }
-                                            },
-                                });
-
-                                
-                            </script>
-                            <script>
-
-
-                                var ClipboardHelper = {
                             
-                                    copyElement: function ($element)
-                                    {
-                                    this.copyText($element.text());
-                                    },
-                                    copyText:function(text) // Linebreaks with \n
-                                    {
-                                        var $tempInput =  $("<textarea>");
-                                        $("body").append($tempInput);
-                                        $tempInput.val(text).select();
-                                        document.execCommand("copy");
-                                        $tempInput.remove();
-                                    }
-                                };
-                                    
-                                 btns: [
-                                    ['viewHTML'],
-                                    ['undo', 'redo'], // Only supported in Blink browsers
-                                    ['formatting'],
-                                    ['strong', 'em', 'del'],
-                                    ['superscript', 'subscript'],
-                                    ['link'],
-                                    ['insertImage'],
-                                    ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
-                                    ['unorderedList', 'orderedList'],
-                                    ['horizontalRule'],
-                                    ['removeformat'],
-                                    ['fullscreen']
-                                ]
-                            
-                            
-                                
-                                    $('#editor').trumbowyg({
-                                    semantic: false, /* (i.e. <em> instead of <i>, <strong> instead of <b>, etc.).  */
-                                        minimalLinks: true,
-                                        btnsDef: {
-                                        spec1: {
-                                            fn: function() {
-                                                    ClipboardHelper.copyText('-'); 
-                                                },
-                                            text: '-',
-                                            title : '-',
-                                            hasIcon : false,
-                                        },
-                                        spec3: {
-                                            fn: function() {
-                                                    ClipboardHelper.copyText('※'); 
-                                                },
-                                            text: '※',
-                                            title : '※',
-                                            hasIcon : false,
-                                        },
-                                        spec2: {
-                                            fn: function() {
-                                                    ClipboardHelper.copyText('▶'); 
-                                                },
-                                            text: '▶',
-                                            title : '▶',
-                                            hasIcon : false,
-                                        },
-                                        specList: {
-                                            dropdown: ['spec1', 'spec2', 'spec3'],
-                                            text: '복사하기',
-                                            title : '특수문자 복사하기',
-                                            hasIcon : false,
-                                        }
-                            
-                                    },
-                            
-                                        //defaultLinkTarget: '_blank',
-                                btns: [
-                                        
-                                        ['viewHTML'],
-                                    ['strong', 'em'],
-                                    ['link'],
-                                    ['fontsize'],
-                                    ['foreColor'], /*, 'backColor'*/
-                                    ['unorderedList', 'orderedList'],
-                                    ['specList'],
-                            
-                                ],
-                                plugins: {
-                                    colors: {
-                                        colorList:['ff0000', '0000ff', '000000', 
-                                        // 추가 요청 컬러
-                                        'E72419', '003186',  '002369', '4FC7E7', '00CAD4'],
-                                        
-                                        /* foreColorList: [
-                                            'ff0000', '0000ff', '000000'
-                                        ],
-                                        backColorList: [
-                                            '000', '333', '555'
-                                        ]*/
-                                    },
-                                    fontsize: {
-                                        sizeList: [
-                                            '14px',
-                                            '18px',
-                                            '22px'
-                                        ],
-                                        allowCustomSize: false
-                                    }
-                                },
-                                tagsToRemove: ['script', 'link']
-                            
-                            });
-                            
-                            function viewHtml(){
-                                // Get HTML content
-                                $('#viewer').html($('#editor').trumbowyg('html'));
-                            }
-                            
-                                </script>
-
-                        
                         </div>
                     </div>
                 </li>
@@ -317,24 +170,3 @@
     </main>
 </body>
 </html>
-<script>
-
-
-
-</script>
-<!-- btns: [
-['strong', 'em'],
-['fontsize'],
-['unorderedList', 'orderedList'],
-],
-plugins: {
-fontsize: {
-    sizeList: [
-        '14px',
-        '18px',
-        '22px'
-    ],
-    allowCustomSize: false
-}
-},
-}); -->

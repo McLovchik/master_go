@@ -1,0 +1,75 @@
+.vacancies__main {
+    margin: 30px 0;
+}
+.vacancy__cards {
+    display: flex;
+    flex-direction: column;
+}
+.vacancies__card {
+    background: var(--color-white);
+    border-radius: 10px;
+    /* height: 40px; */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.vacancies__header-price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-yellow);
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+.vacancies__header {
+    font-weight: 700;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.vacancies__price {
+    font-weight: 600;
+}
+.vacancies__company-city {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.vacancies__company {
+    border-bottom: 1px solid var(--color-black-grey);
+    font-size: 14px;
+    padding-bottom: 2px;
+    color: var(--color-black-grey);
+}
+.vacancies__city {
+    font-size: 14px;
+}
+.vacancy__descrip-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.vacancy__decrip {
+    font-size: 14px;
+    margin-right: 30px;
+}
+.vacancy__decrip-resbonsibilities {
+    margin-bottom: 5px;
+}
+.vacancy__logo img {
+    height: 50px;
+}
+.vacancy__btn {
+    padding: 6px 10px;
+    background: rgb(254, 191, 0, 0.8);
+    /* background: none; */
+    border-radius: 5px;
+    font-size: 15px;
+    /* border: 1px solid var(--color-yellow); */
+}
+.vacancy__btn-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.vacancy__date {
+    font-size: 12px;
+    color: var(--color-black-grey);
+}
