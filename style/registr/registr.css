@@ -288,3 +288,53 @@ li {
 .cv__item-btn {
     margin-top: 20px;
 }
+
+
+.trumbowyg-box, .trumbowyg-editor {
+    width: auto;
+    border-radius: 3px;
+}
+
+
+.cv__form_toggle {
+	display: inline-block;
+	overflow: hidden;
+}
+.cv__form_toggle-item {
+	float: left;
+	display: inline-block;
+}
+.cv__form_toggle-item input[type=radio] {
+	display: none;
+}
+.cv__form_toggle-item label {
+	display: inline-block;
+	padding: 9px 15px;   
+	/* line-height: 34px;     */
+	border: 1px solid #c7c7c7;
+	border-right: none;
+	cursor: pointer;
+	user-select: none;   
+}
+ 
+.cv__form_toggle .cv__item-1 label {
+	border-radius: 3px 0 0 3px;
+}
+.cv__form_toggle .cv__item-2 label {
+	border-radius: 0 3px 3px 0;
+	border-right: 1px solid #c7c7c7;
+}
+
+.cv__form_toggle .cv__item-1 input[type=radio] + label, .cv__form_toggle .cv__item-2 input[type=radio] + label {
+    transition-property: background-color, color;
+    transition: background-color .4s, color .4s;
+}
+/* Checked */
+.cv__form_toggle .cv__item-1 input[type=radio]:checked + label {
+	background-color: var(--color-black);
+    color: var(--color-white);
+}
+.cv__form_toggle .cv__item-2 input[type=radio]:checked + label {
+	background-color: var(--color-black);
+    color: var(--color-white);
+}

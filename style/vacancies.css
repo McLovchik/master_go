@@ -59,6 +59,10 @@
 .vacancy__logo img {
     height: 50px;
 }
+.vacancy__btns {
+    display: flex;
+    align-items: center;
+}
 .vacancy__btn {
     padding: 6px 10px 8px 10px;
     background: rgb(254, 191, 0, 0.8);
@@ -67,6 +71,7 @@
     font-size: 15px;
     /* font-weight: 600; */
     /* border: 1px solid var(--color-yellow); */
+    margin-right: 5px;
 }
 .vacancy__btn-date {
     display: flex;
@@ -83,6 +88,7 @@
     border-radius: 5px;
     padding: 3px 7px 7px 7px;
     background: var(--color-yellow);
+    margin-right: 5px;
 }
 .vacancy__btn-like svg {
     transform: translate(-1px, 2px);
@@ -92,4 +98,21 @@
 }
 .vacancies__card-like .vacancy__btn-like svg {
     fill: var(--color-yellow);
+}
+
+.vacancies__urgent-block {
+    display: none;
+    /* margin-top: -10px;
+    margin-bottom: 10px; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    color: var(--color-yellow);
+    background-color: var(--color-black);
+    padding: 6px 10px 8px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.vacancies__urgent-card .vacancies__urgent-block {
+    display: inline-block;
 }
