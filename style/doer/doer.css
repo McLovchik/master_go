@@ -134,9 +134,15 @@
 }
 
 .doer__comments-item-block {
+    position: relative;
     background: var(--color-white);
     border-radius: 10px;
     padding: 10px;
+}
+.doer__comments-delete {
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }
 .doer__comments-up {
     display: flex;
